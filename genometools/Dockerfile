@@ -5,12 +5,11 @@ FROM debian:jessie
 
 ENV GT_VERSION 1.5.8
 
-
 MAINTAINER Josh Goodman <jogoodma@indiana.edu>
 
 RUN apt-get update && apt-get install -y \
         build-essential \
-        gcc-multiplib \
+        gcc-multilib \
         wget
 
 # Download genometools sources 
