@@ -27,5 +27,6 @@ RUN make 64bit=yes cairo=no install
 
 WORKDIR /
 
+#Fetch GAL from their svn server.
 RUN svn co svn://topaz.genetics.utah.edu/GAL/trunk GAL
 
