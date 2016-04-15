@@ -7,10 +7,12 @@ ENV GT_VERSION 1.5.8
 
 MAINTAINER Josh Goodman <jogoodma@indiana.edu>
 
+#Install dependencies.
+#List::MoreUtils is required by the GAL GFF v3 validator.
 RUN apt-get update && apt-get install -y \
         build-essential \
         gcc-multilib \
-        liblist-moreutils-perl \ #Used by GAL gff validator
+        liblist-moreutils-perl \ 
         wget \
         vim \
         less \
