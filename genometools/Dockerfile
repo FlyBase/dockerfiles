@@ -1,10 +1,10 @@
 #--------------------------------------------------
 # Dockerfile to build genometools
 #--------------------------------------------------
+FROM debian:jessie
 
 ENV GT_VERSION 1.5.8
 
-FROM debian:jessie
 
 MAINTAINER Josh Goodman <jogoodma@indiana.edu>
 
